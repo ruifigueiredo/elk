@@ -2,7 +2,7 @@ version: "2"
 services:
   elasticsearch:
     image: elasticsearch:5.6.11
-    command: elasticsearch -Des.network.host=0.0.0.0
+    command: elasticsearch -Des.network.host=localhost
   kibana:
     image: kibana:5.6.11
     ports:
