@@ -18,7 +18,7 @@ services:
     depends_on:
       - elasticsearch
   filebeat:
-    image: elastic/filebeat
+    image: prima/filebeat
     volumes:
       - ./filebeat/filebeat.yml:/filebeat.yml
       - ../fake-logs:/var/log
